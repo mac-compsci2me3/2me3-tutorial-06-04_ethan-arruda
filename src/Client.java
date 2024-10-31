@@ -6,10 +6,15 @@ public class Client {
 
         // Uncomment the following after implementing your drawing class
         // // Retrieve the stance of drawing
-        // Drawing drawing = Drawing.getInstance();
+        Drawing drawing = Drawing.getInstance();
 
         // // Draw shapes on the instances
-        // drawing.drawShape(square);
-        // drawing.drawShape(circle);
+        drawing.drawShape(square);
+        drawing.drawShape(circle);
+        System.out.println(drawing.shapes);
+        Drawing draws = Drawing.getInstance();
+        System.out.println(draws.shapes);
+        draws.drawShape(square);
+        System.out.println(drawing.shapes);
     }
 }
